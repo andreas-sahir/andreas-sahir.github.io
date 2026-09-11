@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Andreas Sahir Aryanto</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9;}
-        nav { background: #004488; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100;}
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; color: #000;}
+        nav { background: #000; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100;}
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
         nav a:hover { text-decoration: underline; }
         .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-        h1 { color: #004488; margin-bottom: 30px; text-align: center;}
+        h1 { color: #000; margin-bottom: 30px; text-align: center;}
         
         /* Card Grid Styles */
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .card { background: #1a1a24; color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .card { background: #000; color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
         .card img { width: 100%; height: 220px; object-fit: cover; background: #fff; }
         .card-content { padding: 20px; }
         .card-title { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
@@ -33,28 +33,53 @@
 <div class="container">
     <h1>Research</h1>
     <div class="grid-container">
-        <!-- Project 1 -->
+
+        <!-- Master Thesis: Objective 1 -->
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Oral Disease Detection">
+            <img src="assets/trajectory1.png" alt="DRL Drift Compensator">
             <div class="card-content">
-                <div class="card-title">Intra/Extra Oral Disease Detection</div>
-                <div class="card-desc">Developed a prototype using YOLO and CNN for oral disease detection deployed via Streamlit Web Apps.</div>
+                <div class="card-title">Low-Level DRL for Drift Compensation</div>
+                <div class="card-desc">
+                    Developed a Deep Reinforcement Learning (DRL) Multi-Input-Multi-Output (MIMO) controller to autonomously counteract the non-linear kinematic slip of an X-Drive robot. Utilizing a discrete PPO agent, the system overcame traditional PID limitations and improved the success rate from 25% to 70% while maintaining momentut.
+                </div>
             </div>
         </div>
-        <!-- Project 2 -->
+
+        <!-- Master Thesis: Objective 2 -->
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Skin Cancer Classification">
+            <img src="assets/hrl.png" alt="HRL Navigation Stack">
+            <div class="card-content">
+                <div class="card-title">Hierarchical Reinforcement Learning (HRL) Navigation</div>
+                <div class="card-desc">
+                    Constructed an HRL navigation stack that robustly decouples macroscopic spatial planning from microscopic kinematic controt. Utilizing a Semi-Markov Decision Process (SMDP) and temporal frame stacking to resolve Partial Observability (POMDP), the framework achieved near-perfect success rates in dynamic environments and exceptional cross-track precision of less than 0.01 meters in complex mazet.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assets/overfiting.png" alt="Skin Cancer Classification">
             <div class="card-content">
                 <div class="card-title">Skin Cancer Classification</div>
-                <div class="card-desc">Built a robust Bayesian Convolutional Neural Network (TL-CNN) reducing overfitting to 1.3%.</div>
+                <div class="card-desc">Built a robust Bayesian convolutional neural network (TL-CNN) that reduced overfitting to 1.3%.</div>
             </div>
         </div>
-        <!-- Project 3 -->
+
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Cervical Cancer Pre-Screening">
+            <img src="assets/tsne.png" alt="NAIST Research Internship">
+            <div class="card-content">
+                <div class="card-title">Breast Cancer Subtypes Unsupervised Clustering</div>
+                <div class="card-desc">
+                    Conducted at the Computational System Biology Lab, Nara Institute of Science and Technology (NAIST) Japan. Developed a novel topology-based pipeline using deep CNN backbones, k-means, and hierarchical agglomerative clustering to accurately partition 9 distinct breast cancer subtypes from X-ray mammograms. Evaluated mathematical convergence and class separation stability utilizing t-SNE projections.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/cervix.jpeg" alt="Cervical Cancer Pre-Screening">
             <div class="card-content">
                 <div class="card-title">Cervical Cancer Pre-Screening</div>
-                <div class="card-desc">Engineered a pre-screening system based on colposcopy images using Python.</div>
+                <div class="card-desc">Engineered a pre-screening system using Python and colposcopy images.</div>
             </div>
         </div>
     </div>

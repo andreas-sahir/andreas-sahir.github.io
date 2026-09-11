@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Andreas Sahir Aryanto</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9;}
-        nav { background: #004488; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100;}
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; color: #000;}
+        nav { background: #000; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100;}
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
         nav a:hover { text-decoration: underline; }
         .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-        h1 { color: #004488; margin-bottom: 30px; text-align: center;}
+        h1 { color: #000; margin-bottom: 30px; text-align: center;}
         
         /* Card Grid Styles */
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .card { background: #1a1a24; color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .card { background: #000; color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
         .card img { width: 100%; height: 220px; object-fit: cover; background: #fff; }
         .card-content { padding: 20px; }
         .card-title { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
@@ -35,30 +35,42 @@
     <div class="grid-container">
         <!-- Project 1 -->
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Oral Disease Detection">
+            <img src="assets/streamlit.jpeg" alt="Oral Disease Detection">
             <div class="card-content">
                 <div class="card-title">Intra/Extra Oral Disease Detection</div>
-                <div class="card-desc">Developed a prototype using YOLO and CNN for oral disease detection deployed via Streamlit Web Apps.</div>
+                <div class="card-desc">Developed a prototype using YOLO and CNN to detect oral diseases, deployed as a Streamlit web app.</div>
             </div>
         </div>
-        <!-- Project 2 -->
+
+        <!-- Robotics Project 1 -->
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Skin Cancer Classification">
+            <img src="assets/krai 2023.jpeg" alt="Aburobocon Mobile Robot 2023">
             <div class="card-content">
-                <div class="card-title">Skin Cancer Classification</div>
-                <div class="card-desc">Built a robust Bayesian Convolutional Neural Network (TL-CNN) reducing overfitting to 1.3%.</div>
+                <div class="card-title">Aburobocon Mobile Robots 2023</div>
+                <div class="card-desc">Developed two mobile robots, one autonomous and one pilot-controlled, for the Indonesian Aburobocon Contest. Implemented encoder-based feedback, PID control, and IMU sensor fusion for ring-throwing robots.</div>
+                <a href="https://github.com/andreas-sahir/blakasutha-krai-unsoed/tree/aburobocon-2023" target="_blank" class="card-btn">View on GitHub</a>
             </div>
         </div>
-        <!-- Project 3 -->
+
+        <!-- Robotics Project 2 -->
         <div class="card">
-            <img src="https://via.placeholder.com/400x220?text=Project+Photo" alt="Cervical Cancer Pre-Screening">
+            <img src="assets/krai 2022.jpeg" alt="Aburobocon Mobile Robot 2022">
             <div class="card-content">
-                <div class="card-title">Cervical Cancer Pre-Screening</div>
-                <div class="card-desc">Engineered a pre-screening system based on colposcopy images using Python.</div>
+                <div class="card-title">Aburobocon Mobile Robots 2022</div>
+                <div class="card-desc">Developed mobile robots that utilize Arduino-compatible microcontrollers programmed in C/C++. They feature low-level motor control and autonomous state-machine logic for a ball-throwing robot and a pick-and-place task robot.</div>
+                <a href="https://github.com/andreas-sahir/blakasutha-krai-unsoed" target="_blank" class="card-btn">View on GitHub</a>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- Robotics Project 3 -->
+        <div class="card">
+            <img src="assets/krai 2021.jpeg" alt="Aburobocon Mobile Robot 2021">
+            <div class="card-content">
+                <div class="card-title">Aburobocon Mobile Robot 2021</div>
+                <div class="card-desc">Developed a four-wheeled robot integrating diverse actuators, including DC motors, pneumatic systems, and omni wheels, for Aburobocon competition tasks, including the arrow-throwing task.</div>
+                <a href="https://github.com/bangkit-pambudi/Blakasutha" target="_blank" class="card-btn">View on GitHub</a>
+            </div>
+        </div>
 
 </body>
 </html>
