@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Andreas Sahir Aryanto</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333;}
+        nav { background: #004488; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100;}
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        
+        /* Publication List Styles */
+        .pub-item { display: flex; gap: 25px; margin-bottom: 40px; align-items: flex-start; }
+        .pub-img { width: 220px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.15); object-fit: cover; }
+        .pub-info { display: flex; flex-direction: column; gap: 8px; }
+        .pub-title { font-weight: bold; font-size: 1.2em; color: #000; }
+        .pub-authors { color: #555; }
+        .pub-venue { font-weight: bold; color: #222; }
+        .pub-btn { background: #4a5568; color: white; padding: 6px 15px; border-radius: 5px; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center; gap: 5px; width: fit-content; }
+        .pub-btn:hover { background: #2d3748; }
+        
+        @media (max-width: 600px) {
+            .pub-item { flex-direction: column; }
+            .pub-img { width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+</nav>
+
+<div class="container">
+    <h1>Publications</h1>
+    
+    <!-- Publication 1 -->
+    <div class="pub-item">
+        <img src="https://via.placeholder.com/220x140?text=Paper+Thumbnail" alt="Paper Image" class="pub-img">
+        <div class="pub-info">
+            <div class="pub-title">Compensating for Kinematic Drift in X-Drive Mobile Robot Using Model-Free Reinforcement Learning</div>
+            <div class="pub-authors">Andreas Sahir Aryanto, et al.</div>
+            <div class="pub-venue">International Conference on Electrical Engineering/Electronics, Computer, Telecommunication, and Information Technology (May 2026)</div>
+            <a href="#" class="pub-btn">📄 Paper</a>
+        </div>
+    </div>
+
+    <!-- Publication 2 -->
+    <div class="pub-item">
+        <img src="https://via.placeholder.com/220x140?text=Paper+Thumbnail" alt="Paper Image" class="pub-img">
+        <div class="pub-info">
+            <div class="pub-title">Addressing Overfitting in Dermatological Image Analysis with Bayesian Convolutional Neural Network</div>
+            <div class="pub-authors">M. I. Zulfa, Andreas Sahir Aryanto, et al.</div>
+            <div class="pub-venue">Jurnal Ilmiah Teknik Elektro Komputer dan Informatika (July 2024)</div>
+            <a href="#" class="pub-btn">📄 PDF</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
